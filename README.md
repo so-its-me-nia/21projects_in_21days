@@ -5,3 +5,5 @@ Each project is a hands-on exercise—sometimes revisiting fundamentals, sometim
 
 It’s a way to brush up on skills, stay consistent, and push myself to learn actively. Every project is a small victory in my quest for AI mastery!
 Feel free to explore, learn, or get inspired!
+
+Huge thanks to the folks at GeeksforGeeks for this refresher course challenge!
