@@ -1,0 +1,14 @@
+- The entire execution starts off with the Market researcher agent being tasked with finding the latest industry trends.
+- Serper tool is used to gather the information from websites (IBM, McKinsey, National University, Khoros, Trend Micro).
+- Agent flags the IBM, McKinsey, Stanford sources as most credible.
+- Market research agent now goes through the data from each of these sourses individually and notices key points and findings*.
+- These are sent to the Report generator agent
+- Report generator agent puts all these findings into themes and creates the final output
+- The writer agent finally creates the blog post.
+
+*Noteworthy Findings:
+- GenAI boom in market (IT, customer service etc)
+- LLM model advancement
+- Agentic AI creation
+- AI being used in a wide variety of business use cases (accross the organizations)
+- Need for responsible AI and governance
