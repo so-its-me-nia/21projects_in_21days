@@ -1,0 +1,57 @@
+\Day 20>python day20_browserAgent.py
+
+INFO     [service] Using anonymized telemetry, see https://docs.browser-use.com/development/telemetry.
+INFO     [Agent] 🚀 Task: Search Google for 'weirdest fictional characters in classic literature' and summarize the top 5 results with links.
+INFO     [service] ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+INFO     [service] 🔐 To view this run in Browser Use Cloud, authenticate with:
+INFO     [service]     👉  browser-use auth
+INFO     [service]     or: python -m browser_use.cli auth
+INFO     [service] ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+INFO     [Agent] 🧠 Starting a browser-use version 0.7.10 with model=gemini-2.0-flash
+INFO     [Agent] 
+
+INFO     [Agent] 📍 Step 1:
+INFO     [Agent]   ❔ Eval: Agent initialized, no previous action to evaluate.
+INFO     [Agent]   🎯 Next goal: Search Google for 'weirdest fictional characters in classic literature'.
+INFO     [Agent]   🦾 [ACTION 1/1] search: query: weirdest fictional characters in classic literature, search_engine: google
+ERROR    [cdp_use.client] CDP Error for request 32: {'code': -32000, 'message': 'Not attached to an active page'}
+INFO     [tools] 🔍  Searched Google for 'weirdest fictional characters in classic literature'
+INFO     [Agent] 
+
+INFO     [Agent] 📍 Step 2:
+INFO     [Agent]   👍 Eval: Successfully searched Google. Verdict: Success
+INFO     [Agent]   🎯 Next goal: Extract the top 5 search results and their links from the current Google search results page.
+INFO     [Agent]   🦾 [ACTION 1/1] extract_structured_data: query: Extract the top 5 search results and their links., extract_links: True, start_from_char: 0
+INFO     [tools] 📄 Extracted content from https://www.google.com/search?q=weirdest+fictional+characters+in+classic+literature&udm=14&sei=1vTbaIODKqfs1e8PxP6VyAE for query: Extract the top 5 search results and their links.
+Content saved to file system: Extracted content saved to file extracted_content_0.md successfully. and displayed in <read_state>.
+INFO     [Agent] 
+
+INFO     [Agent] 📍 Step 3:
+INFO     [Agent]   👍 Eval: Successfully extracted the top 5 search results and their links. Verdict: Success
+INFO     [Agent]   🎯 Next goal: Prepare to call the done action with the summarized results and links.
+INFO     [Agent]   🦾 [ACTION 1/1] done: text: Heres a summary of the top 5 search results for weirdest fictional characters in classic literature:\n\n1. **Books wit
+INFO     [Agent]
+📄  Final Result:
+Here's a summary of the top 5 search results for 'weirdest fictional characters in classic literature':
+
+1. **Books with very interesting/eccentric characters?** - [https://www.reddit.com/r/booksuggestions/comments/glge12/books_with_very_interestingeccentric_characters/](https://www.reddit.com/r/booksuggestions/comments/glge12/books_with_very_interestingeccentric_characters/)
+2. **What are the most unusual characters in famous novels?** - [https://www.quora.com/What-are-the-most-unusual-characters-in-famous-novels](https://www.quora.com/What-are-the-most-unusual-characters-in-famous-novels)
+3. **Best 101 Greatest Fictional Characters of All Time** - [https://www.papertrue.com/blog/fictional-characters/](https://www.papertrue.com/blog/fictional-characters/)       
+4. **10 Real People Behind Classic Fictional Characters** - [https://listverse.com/2024/03/29/10-real-people-behind-classic-fictional-characters/](https://listverse.com/2024/03/29/10-real-people-behind-classic-fictional-characters/)
+5. **An Examination of Eccentric Characters** - [https://daveastoronliterature.com/2020/04/19/an-examination-of-eccentric-characters/](https://daveastoronliterature.com/2020/04/19/an-examination-of-eccentric-characters/)
+
+
+INFO     [Agent] ✅ Task completed successfully
+WARNING  [cdp_use.client] WebSocket connection closed: no close frame received or sent
+
+---------------------
+Visited URLs:
+['about:blank', 'https://www.google.com/search?q=weirdest+fictional+characters+in+classic+literature&udm=14', 'https://www.google.com/search?q=weirdest+fictional+characters+in+classic+literature&udm=14&sei=1vTbaIODKqfs1e8PxP6VyAE']
+
+Visited_urls.txt created successfully.
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002233503FCE0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000022335001FD0>, 865370.625)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002233503FBF0>
